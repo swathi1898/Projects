@@ -1,0 +1,27 @@
+
+<%- include("partials/header"); -%>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">My Word</a>
+
+  </nav>
+
+    <div class="container ">
+        <h1 class="register-heading" style="text-align: center;">Register</h1>
+    
+    
+        <div class="card "> 
+            
+            <div class="card-body ">
+                <form action="/register" method="post">
+                <label for="">Username</label>
+                <input type="text" class="name-field"name="username" required autocomplete="off" id=""><br>
+                <label for="">Password</label>
+                <input type="password"class="name-field"  name="password" required id="">               
+                <button class="btn register-btn  btn-block"  type="submit">Register</button>
+                </form>
+            </div>
+            
+        </div> 
+    </div>
+    
+<%- include("partials/footer"); -%>

@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">My Word</a>
+  
+  </nav>
+
+<div class="first-section">
+    <h1>My Word</h1>
+    <div class="container">
+      <h5>Welcome to My Word. Here you can express your meaning for a word.</h5>
+      <div class="card"> 
+        <div class="card-header">
+          Sign in
+        </div>
+        <div class="card-body">
+          <form action="/" method="post">
+            <label for="">Username</label>
+            <input type="text" class="name-field"name="username" required autocomplete="off" id=""><br>
+            <label for="">Password</label>
+            <input type="password"class="name-field"  name="password" required id="">               
+            <button class="btn  btn-block" type="submit">Sign in</button>
+          </form>
+          
+          <form class="form-bottom" action="/register" method="GET">
+            <button class="btn register-btn   btn-block" type="submit"> Register </button>
+          </form>
+        </div>
+        
+      </div> 
+     
+  
+      
+    </div>
+    <!------------------------------------------------------------------------  -->
+</div>
+<%- include("partials/footer"); -%>

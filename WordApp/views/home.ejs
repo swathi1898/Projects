@@ -1,0 +1,56 @@
+
+<%- include("partials/header"); -%>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">My Word</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/words">Words</a>
+        <a class="nav-link" href="/logout">Log out</a>
+        
+      </div>
+   
+     
+    </div>
+  </nav>
+  <div class="container">
+      <h1>Welcome! to My-Word</h1>
+      <p>Create your meaning to your Word</p>
+  </div>
+  <div class="container message-container">
+    <form action="/words" method="POST">
+        <div class="row">
+            <div class="col-25">
+               <label for="word">Word:</label> 
+            </div>
+            <div class="col-75">
+                <input type="text" name="word" required id="word">
+            </div>
+            
+        </div>
+        <div class="row ">
+            <div class="col-25">
+                <label for="meaning">Meaning:</label>
+            </div>
+            <div class="col-75">
+                <textarea name="meaning" id="meaning" required cols="30" rows="5"></textarea>
+            </div>
+        </div>  
+        <div class="row">
+            <input class="msg-submit" type="submit" value="Submit">
+        </div>
+    </form>
+  </div>
+  
+ 
+  
+
+
+
+  
+        
+    
+<%- include("partials/footer"); -%>
